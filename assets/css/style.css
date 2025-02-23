@@ -38,8 +38,13 @@
     src: url(../fonts/silkserif-regularitalic-webfont.ttf);
 }
 
+main {
+    overflow: hidden !important;
+}
 
-
+.mx-auto {
+    margin: auto;
+}
 
 #loader {
     padding: 10vw;
@@ -49,8 +54,13 @@
 
 }
 
-.mx-auto {
-    margin: auto;
+.custom-cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    mix-blend-mode: difference;
+    z-index: 99;
+    transform: translate(-50%, -50%);
 }
 
 .line {
@@ -75,6 +85,14 @@ nav {
     margin: auto;
     font-family: 'plain-light-webfont';
 
+}
+
+
+/* hero section */
+.hero-hover-text:hover {
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    font-weight: 400;
 }
 
 @keyframes identifier {
@@ -111,17 +129,117 @@ nav {
     transition: all 0.5s;
     opacity: 0;
     transition: all 0.5s;
-    
+
 
 }
+
 .activ-flag {
     scale: 1.2;
     opacity: 1;
     transition: all 0.5s;
 }
+
 .content h2 {
     font-size: 4.5rem;
     font-family: 'plain-regular-webfont';
     font-weight: 900;
 
+}
+
+/* page2 */
+/* .page2 img:hover {
+    opacity: 0;
+    transition: all 0.5s;
+} */
+.playbox {}
+
+/* project section start here */
+.our-project {
+    padding: 30px;
+
+}
+
+.project-heading h3 {
+    margin-right: -170px;
+}
+
+.project-box {
+    margin-top: 55px;
+}
+
+.cricle-div>div:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+/* .about obys section start here */
+.about-obys-section {
+    padding: 30px;
+}
+
+.about-content {
+    margin: 50px auto;
+    width: 70%;
+
+}
+
+.about-box {
+    position: absolute;
+    padding: 20px;
+    /* border-radius: 12px; */
+    top: 229px;
+    left: 323px;
+}
+
+.mt-5 {
+    margin-top: 25px;
+}
+
+.marquee {
+    margin-top: 100px;
+    font-family: 'silkserif-lightitalic-webfont';
+    padding: 90px;
+
+}
+
+.marquee__inner {
+
+    white-space: nowrap;
+    animation: marqueeAnimation 10s linear infinite;
+}
+
+.marquee__inner h2,
+.marquee__inner2 h2 {
+    white-space: nowrap;
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    text-transform: uppercase;
+
+
+}
+
+.marquee__inner2 {
+    margin-top: 20px;
+    animation: marqueeAnimation 10s linear infinite;
+    animation-direction: reverse;
+}
+
+@keyframes marqueeAnimation {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+
+}
+
+/* footer section start here */
+footer{
+    padding: 30px;
+    /* height: 70% !important; */
 }

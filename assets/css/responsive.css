@@ -1,0 +1,19 @@
+@media (max-width:850px) {
+    .content{
+        width: 500px;
+        margin-right: -300px;
+        
+    }
+    .content h2,.loader h2{
+        font-size: 2rem;
+
+    }
+    .line{
+        width: 500px;
+        background-color: red;
+    }
+    .line h2{
+        font-size: 2rem;
+
+    }
+}

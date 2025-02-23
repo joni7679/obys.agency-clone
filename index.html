@@ -5,14 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>obys.agency-clone|❤️</title>
+    <link rel="icon" href="https://obys.agency/wp-content/themes/obys/images/favicon/apple-touch-icon.png"
+        type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" /> <!-- Recommended -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 
 </head>
 
 <body>
     <!-- #0B0B0B -->
-    <!-- <div id="loader" class="w-full  bg-[#0B0B0B] fixed top-0 left-0 capitalize">
+    <div id="loader" class="w-full  bg-[#0B0B0B] fixed top-0 left-0 capitalize">
         <div class="line flex items-center gap-1">
             <div class="line-part-para flex items-center justify-center">
                 <h3>0</h3>
@@ -27,9 +33,13 @@
             <h1 class="text-[6rem] font-semibold">is loading right</h1>
             <h2 class="text-[6rem] font-semibold now-text-anime">now</h2>
         </div>
-    </div> -->
+    </div>
 
-    <main class="w-full bg-[#151515]">
+    <main class="w-full bg-[#151515] ">
+        <div class="custom-cursor w-[30px]  h-[30px]  border-2 border-white rounded-full  z-50 ">
+
+        </div>
+
         <nav class=" w-full flex container  items-center gap-2 justify-between bg-[#151515]">
             <div class="logo text-white">
                 <h1>obys.agency</h1>
@@ -44,36 +54,311 @@
             </div>
 
         </nav>
-        <div class="hero-section h-screen bg-[#151515] flex items-center justify-center relative">
+
+        <div class="hero-section  bg-[#151515] flex items-center justify-center relative" data-scroll>
             <div class="scroll-text-anime">
-                <h1 class="absolute left-[54px] bottom-[85px] text-gray-700
-                ">Scroll</h1>
+                <h1 class="absolute left-[54px] bottom-[85px]">Scroll</h1>
             </div>
 
             <img class="absolute w-52 flag-img" src="./assets/images/Flag.jpg" alt="">
 
-            <div class="content uppercase">
+            <div class="content uppercase w-[700px] ">
                 <h2> We design</h2>
                 <h2>unique <span>websites</span></h2>
-                <h2><span class="border-b-4 border-b-white">web</span> / <span
-                        class="border-b-4 border-b-white">graphic</span></h2>
+                <h2><span class="border-b-4 border-b-white hero-hover-text">web</span> / <span
+                        class="border-b-4 border-b-white hero-hover-text">graphic</span></h2>
                 <h2>experience</h2>
                 <!-- <p>Our team of designers and developers are here to make your website look beautiful and work perfectly.</p> -->
             </div>
         </div>
-        <div class="page2 container mx-auto h-screen  bg-zinc-900 px-5 relative">
-            <div class="play-anime-div">
-
+        <!-- page 2 start here -->
+        <div class="page2 container mx-auto h-screen  bg-zinc-900 px-5 relative" data-scroll data-scroll-speed="2">
+            <div
+                class="absolute left-[80%] z-[99] top-0  play-anime w-[150px] h-[150px] bg-[#FFA63D] flex items-center justify-center rounded-full  -translate-x-1/2">
+                <i class="ri-play-large-fill text-xl "></i>
             </div>
-            <div class="w-[50%] h-[500px]  absolute top-0 right-0 z-10">
-                <img class="w-full h-full object-cover" src="./assets/images/Showreel-2022-preview-1.jpg" alt="">
+            <div class="w-[70%] h-[500px]  absolute top-[6px] right-0 z-10 video-container ">
+                <video class="w-full h-full object-cover absolute"
+                    src="https://obys.agency/wp-content/uploads/2024/12/Obys-Showreel-2024.mp4" loop muted
+                    autoplay></video>
+                <img class="w-full h-full object-cover absolute" src="./assets/images/Showreel-2022-preview-1.jpg"
+                    alt="">
             </div>
 
         </div>
 
+        <!-- project section start here -->
+        <div class="our-project container mx-auto " data-scroll>
+            <div class="project-heading flex items-center justify-center  overflow-hidden ">
+                <div class="flex flex-col  w-[700px]">
+                    <h3 class="text-9xl w-fit">Our Projects</h3>
+                    <span class="inline-block  border-2 border-red-400 project-span"></span>
+                </div>
+
+            </div>
+            <div class="flex sm:grid-cols-1 p-10 space-x-10 gap-5 project-box  ">
+                <!-- Left Section -->
+                <div class="w-2xs">
+                    <h1 class="text-3xl font-bold">OLGA PRUDKA</h1>
+                    <div class="mt-5  p-20 flex items-center justify-center w-full h-[300px] project-img p-img">
+                        <img class="w-full h-full object-cover" src="./assets/images/Olga_Prudka_1.png" alt="">
+                        <img class="w-full h-full object-cover" src="./assets/images/Olga_Prudka_2.png" alt="">
+                        <img class="w-full h-full object-cover" src="./assets/images/Olga_Prudka_3.png" alt="">
+                        <img class="w-full h-full object-cover" src="./assets/images/Olga_Prudka_1.png" alt="">
+                        <img class="w-full h-full object-cover" src="./assets/images/Olga_Prudka_2.png" alt="">
+
+                    </div>
+                    <div class="mt-5 text-sm flex justify-between border-t border-gray-500 pt-2 w-full">
+                        <p>Logo design, Website design, Development</p>
+                        <p>2023</p>
+                    </div>
+                </div>
+
+                <!-- Right Section -->
+                <div class="w-1/3">
+                    <h1 class="text-3xl font-bold">AIM</h1>
+                    <div class="mt-5  p-20 flex items-center justify-center w-full h-[450px] project-img">
+                        <img class="w-full h-full object-cover" src="./assets/images/AIM-1.png" alt="">
+                        <img class="w-full h-full object-cover" src="./assets/images/AIM-2.png" alt="">
+                        <img class="w-full h-full object-cover" src="./assets/images/AIM-3.png" alt="">
+                        <img class="w-full h-full object-cover" src="./assets/images/AIM-1.png" alt="">
+                        <img class="w-full h-full object-cover" src="./assets/images/AIM-2.png" alt="">
+
+                    </div>
+                </div>
+                <div
+                    class="cricle-div w-[300px]  h-[300px] border-2 border-white rounded-full flex items-center justify-center cursor-pointer relative overflow-hidden cursor-p">
+                    <div class="absolute w-0 h-0 bg-[#FFFFFF] flex items-center justify-center scale-none
+                    ">
+                        <p class="text-blck opacity-[0]">We are thrilled to have you on board. We hope you enjoy the
+                            projects 🧡</p>
+                    </div>
+                    <i class="ri-arrow-down-line text-9xl "></i>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- about obys section start here -->
+        <div class="about-obys-section container mx-auto " data-scroll>
+            <!-- <div class="flex flex-col ">
+                <h3 class="text-9xl w-fit uppercase">about
+                    obys</h3>
+                <span class="inline-block  border-2 border-red-400 project-span"></span>
+            </div> -->
+            <div class="about-us-content">
+                <p>Our
+                    agency
+                    is
+                    about
+                    people
+                    who
+                    love
+
+                    creating,
+                    designing
+                    and
+                    developing
+
+                    wow
+                    projects.
+                    In
+                    the
+                    same
+                    time
+                    we
+                    are
+
+                    a
+                    boutique
+                    agency
+                    that
+                    is
+                    more
+                    than
+
+                    the
+                    collective.
+                    We
+                    learn
+                    and
+                    grow,
+                    win
+
+                    and
+                    celebrate
+                    together.</p>
+            </div>
+            <div class="flex items-start justify-items-start shrink-0 gap-5 w-full h-4/5  about-content relative">
+                <div class="about-img w-[400px] h-[400px]  shrink-0">
+                    <img class="w-full h-full object-contain" src="./assets/images/content-image01.jpg" alt="">
+                </div>
+                <p>
+                    We are happy to present our new website and updated version of Obys agency. As before we are open
+                    for new projects worldwide! <br> <br> <br>
+                    Would you like to have award winning site or unique branding style, please say hi to our manager
+                    —info@obys.agency.
+                    And we will help you with the pleasure.
+                </p>
+                <div class="bg-blue-500 flex justify-center items-center  px-4 max-w-sm about-box">
+                    <div class="text-white text-lg max-w-xl w-full">
+                        <div class="mt-5 border-b border-white py-4 flex justify-between items-center mt-5">
+                            <span class="font-bold text-xl">Awwwards x16</span>
+                            <span class="text-sm text-gray-200">SOTM, SOTD and Honorable Mentions</span>
+                        </div>
+                        <div class="mt-5 border-b border-white py-4 flex justify-between items-center mt-5">
+                            <span class="font-bold text-xl">Red Dot Award x1</span>
+                            <span class="text-sm text-gray-200">Best of the Best</span>
+                        </div>
+                        <div class="mt-5 border-b border-white py-4 flex justify-between items-center">
+                            <span class="font-bold text-xl">FWA x11</span>
+                            <span class="text-sm text-gray-200">FWA of The Day</span>
+                        </div>
+                        <div class="mt-5 border-b border-white py-4 flex justify-between items-center">
+                            <span class="font-bold text-xl">CSSDA x23</span>
+                            <span class="text-sm text-gray-200">WOTM, WOTD and UI, UX, Innovation</span>
+                        </div>
+                        <div class="py-4 flex justify-between items-center">
+                            <span class="font-bold text-xl">Behance x25</span>
+                            <span class="text-sm text-gray-200">Interaction, Graphic Design</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- marquee text start here -->
+        <div class="marquee-text  w-full">
+            <div class="marquee">
+
+                <div class="marquee__inner flex items-center justify-center gap-2">
+                    <h2 class="text-7xl">-technology
+                    </h2>
+                    <h2 class="text-7xl">-fashion</h2>
+                    <h2 class="text-7xl">-sport
+                    </h2>
+                    <h2 class="text-7xl">-technology
+                    </h2>
+                    <h2 class="text-7xl">-fashion</h2>
+                    <h2 class="text-7xl">-sport
+                    </h2>
+                    <h2 class="text-7xl">-technology
+                    </h2>
+                    <h2 class="text-7xl">-fashion</h2>
+                    <h2 class="text-7xl">-sport
+                    </h2>
+                </div>
+
+                <div class="marquee__inner2 flex items-center justify-center gap-2">
+                    <h2 class="text-7xl">-beauty
+
+                    </h2>
+                    <h2 class="text-7xl">-architecture</h2>
+                    <h2 class="text-7xl">-sport
+                    </h2>
+                    <h2 class="text-7xl">-real
+                        estate
+                    </h2>
+                    <h2 class="text-7xl">-architecture</h2>
+                    <h2 class="text-7xl">-sport
+                    </h2>
+                    <h2 class="text-7xl">-technology
+                    </h2>
+                    <h2 class="text-7xl">-fashion</h2>
+                    <h2 class="text-7xl">-sport
+                    </h2>
+                </div>
+
+                <div class="marquee__inner flex items-center justify-center gap-2">
+                    <h2 class="text-7xl">-technology
+                    </h2>
+                    <h2 class="text-7xl">-fashion</h2>
+                    <h2 class="text-7xl">-sport
+                    </h2>
+                    <h2 class="text-7xl">-technology
+                    </h2>
+                    <h2 class="text-7xl">-fashion</h2>
+                    <h2 class="text-7xl">-sport
+                    </h2>
+                    <h2 class="text-7xl">-technology
+                    </h2>
+                    <h2 class="text-7xl">-fashion</h2>
+                    <h2 class="text-7xl">-sport
+                    </h2>
+                </div>
+
+                <div class="marquee__inner2 flex items-center justify-center gap-2">
+                    <h2 class="text-7xl">-beauty
+
+                    </h2>
+                    <h2 class="text-7xl">-architecture</h2>
+                    <h2 class="text-7xl">-sport
+                    </h2>
+                    <h2 class="text-7xl">-real
+                        estate
+                    </h2>
+                    <h2 class="text-7xl">-architecture</h2>
+                    <h2 class="text-7xl">-sport
+                    </h2>
+                    <h2 class="text-7xl">-technology
+                    </h2>
+                    <h2 class="text-7xl">-fashion</h2>
+                    <h2 class="text-7xl">-sport
+                    </h2>
+                </div>
+
+
+            </div>
+        </div>
+        <!-- footer section start here -->
+        <footer class="w-full py-16 px-10 ">
+            <div class=" mx-auto  container ">
+                <div class="pr-[100px]">
+                    <div>
+                        <h2 class="text-6xl">Let's Create</h2>
+                    </div>
+                    <div class="grid sm:grid-cols-1 md:grid-cols-3 gap-10 mt-5">
+                        <div>
+                            <h2 class="text-lg font-semibold uppercase mb-4">Socials</h2>
+                            <ul class="space-y-2 text-lg">
+                                <li><a href="#" class="hover:underline">Dribbble</a></li>
+                                <li><a href="#" class="hover:underline">Behance</a></li>
+                                <li><a href="#" class="hover:underline">Instagram</a></li>
+                                <li><a href="#" class="hover:underline">Facebook</a></li>
+                                <li><a href="#" class="hover:underline">Twitter</a></li>
+                                <li><a href="#" class="hover:underline">YouTube</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Address -->
+                        <div>
+                            <h2 class="text-lg font-semibold uppercase mb-4">Address</h2>
+                            <p class="text-lg leading-7">
+                                Zamarstynivska 55<br>
+                                79019 Lviv<br>
+                                Ukraine
+                            </p>
+                        </div>
+
+                        <!-- Contact -->
+                        <div>
+                            <h2 class="text-lg font-semibold uppercase mb-4">Say Hi!</h2>
+                            <a href="mailto:info@obys.agency" class="text-lg underline hover:text-gray-400">
+                                info@obys.agency
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </footer>
     </main>
 
 
+    <!-- locomotive js cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
     <!--  Gsap is needed for Basic Effects -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 
@@ -85,6 +370,8 @@
 
     <!-- ControlKit is needed for Debug Panel -->
     <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/sheryjs/dist/Shery.js"></script> <!-- Recommended -->
+
     <script src="./assets/js/script.js"></script>
 </body>
 
